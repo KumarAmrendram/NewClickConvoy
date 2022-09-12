@@ -20,12 +20,17 @@ body {
 .bg-true-blue{
  background-color: #0073CF;
 }
-
+.bg-azure-blue{
+  background-color: #046CD2;
+}
 /* Navbar */
 header .flex a img{
-    width: 200px;
+    width: 80px;
 }
 
-.banner {
+
+/* Banner */
+.banner img {
+  /* width: 90%; */
 }
 
