@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(0, 115, 207);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 115, 207, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.true-blue {
+  color: #0073CF;
+}
+
+.bg-true-blue{
+ background-color: #0073CF;
+}
+
+/* Navbar */
+header .flex a img{
+    width: 200px;
+}
+
+.banner {
+}
+
