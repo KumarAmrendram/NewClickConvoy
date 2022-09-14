@@ -67,6 +67,10 @@ a {
   }
 }
 
+.hero-section,.offerings,.advertiser,.publisher,.join-us {
+  height:min-content;
+}
+
 /* Banner */
 
 .banner-button {
@@ -85,6 +89,7 @@ a {
   margin-top: 0;
   text-align: left;
   padding-right: 20px;
+  width: 60% !important;
 }
 
 /* Advertisers */
@@ -168,9 +173,6 @@ a {
 
 /* Join us */
 
-.join-us {
-  height: fit-content;
-}
 
 .join-us h1 {
   font-size: 3rem;
@@ -222,12 +224,25 @@ a {
   display: flex;
   width: calc(250px * 14);
 }
+
+@media (max-width:560px){
+  .slider .slide-track img {
+    width: 150px;
+  }
+}
+
 .slider .slide {
   height: 100px;
   width: 250px;
 }
 
 /* missionM*/
+
+.mission {
+  padding-top: 3em;
+  height: 94vh;
+}
+
 .mission .para{
   font-weight: 500;
 }
@@ -239,8 +254,15 @@ a {
 
 /* Footer */
 .footer {
-  background-color: black;
+  /* position: absolute; */
   color: #fff;
   text-align: center;
   bottom: 0;
+}
+
+#footer-container{
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  align-items: center;
 }

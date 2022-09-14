@@ -42,7 +42,7 @@ textarea {
   max-width: 768px;
   margin: 60px auto;
   position: relative;
-  background-color: #f8f8ff
+  background-color: #fff;
 }
 
 form {
@@ -58,6 +58,16 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   margin-top: 1.5em;
+}
+
+img {
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+}
+
+.heading {
+  padding-right: 10px;
 }
 
 .underline {
@@ -84,6 +94,12 @@ h1 {
 	width: 45%;
 }
 
+.adv-email {
+	float: left;
+	width: 90%;
+}
+
+
 .skype {
 	float: right;
 	width: 45%;
@@ -105,22 +121,17 @@ h1 {
 }
 
 input[type='text'], [type='email'], select, textarea,.traffic,.industry-experience,.connection-type {
-	background: none;
-  border: none;
-	border-bottom: solid 2px #474544;
+	/* background: none; */
+  /* border: none; */
+	/* border-bottom: solid 2px #474544; */
 	color: #474544;
 	font-size: 1.000em;
   font-weight: 400;
   letter-spacing: 1px;
 	margin: 0em 0 1.875em 0;
-	padding: 0 0 0.875em 0;
+	padding: 0 0 0.875em -0;
   text-transform: uppercase;
 	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
