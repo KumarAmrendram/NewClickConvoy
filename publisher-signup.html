@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>ClickConvoy Publisher Signup</title>
+    <link rel="stylesheet" href="./assets/css/pubForm.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>&bull; ClickConvoy Publisher Signup &bull;</h1>
+        <p class="text-center"> Better Offers, Better Payouts, Better ROI</p>
+
+        <div class="underline">
+        </div>
+        <div class="">
+            <form  method="post" id="contact_form" name="publisherForm">
+              <div class="name">
+                  <label for="name"></label>
+                  <input type="text" placeholder="My name is" name="name" id="name_input" >
+              </div>
+              <div class="email">
+                  <label for="email"></label>
+                  <input type="email" placeholder="My e-mail is" name="email" id="email_input" >
+              </div>
+              <div class="telephone">
+                  <label for="name"></label>
+                  <input type="text" placeholder="My number is" name="phone" id="telephone_input" >
+              </div>
+              <div class="subject">
+                  <label for="subject"></label>
+                  <select placeholder="Subject line" name="Account Type" id="subject_input" >
+                      <option disabled hidden selected>Account Type</option>
+                      <option>Individual</option>
+                      <option>Propritorship</option>
+                      <option>Partnership</option>
+                      <option>Limited Company</option>
+                  </select>
+              </div>
+              <div class="skype">
+                  <label for="skype"></label>
+                  <input type="text" placeholder="Skype" name="skype" id="skype_input" >
+              </div>
+              <div class="name">
+                  <label for="telegram"></label>
+                  <input type="text" placeholder="Telegram" name="telegram" id="telegram_input" >
+              </div>
+              <div class="name">
+                  <label for="name"></label>
+                  <input type="text" placeholder="My address is" name="address" id="address_input" >
+              </div>
+        
+              <div class="traffic row">
+                  <label class="mb-3" for="traffic-source">Traffic Source</label> <br>
+        
+        
+                  <div class="col-lg-4 radio-div"><input type="radio" id="ppc" name="traffic" value="PPC" />
+                      <label for="ppc">ppc</label>
+                  </div>
+        
+                  <div class="col-lg-4 radio-div"> <input type="radio" id="website" name="traffic" value="Website" />
+                      <label for="Website">Website</label>
+                  </div>
+        
+                  <div class="col-lg-4 radio-div"> <input type="radio" id="incent" name="traffic" value="Incent" />
+                      <label for="incent">Incent</label>
+        
+                  </div>
+        
+                  <div class="col-lg-4 col-md-4 radio-div"> <input type="radio" id="mobile" name="traffic" value="Mobile" />
+                      <label for="mobile">Mobile</label>
+                  </div>
+        
+                  <div class="col-lg-4 col-md-4 radio-div">
+                      <input type="radio" id="facebook" name="traffic" value="facebook" />
+                      <label for="facebook">facebook</label>
+                  </div>
+                  <div class="col-lg-4 col-md-4 radio-div"> <input type="radio" id="mediaBuying" name="traffic" value="Media Buying" />
+                      <label for="mediaBuying">Media Buying</label>
+                  </div>
+        
+                  <div class="col radio-div">
+                      <input type="radio" id="emailMarketing" name="traffic" value="Email Marketing" />
+                      <label for="emailMarketing">Email Marketing</label>
+                  </div>
+              </div>
+        
+              <div class="industry-experience">
+                  <label for="vol">Industry Experience</label> <br>
+                  <input type="range" name="industry-experience" id="industry-exp" min="0" max="100" >
+              </div>
+        
+              <div class="message">
+                  <label for="message"></label>
+                  <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5"
+                      ></textarea>
+              </div>
+        
+              <div class="connection-type row">
+                  <label class="mb-3" for="">how would you like to connect ?</label> <br>
+        
+        
+                  <div class="col-lg-3 radio-div"><input type="radio" id="connect-email" name="connection-type" value="Email" />
+                      <label for="connect-email">Email</label>
+                  </div>
+        
+                  <div class="col-lg-3 radio-div"> <input type="radio" id="connect-phone" name="connection-type" value="Phone" />
+                      <label for="connect-phone">Phone</label>
+                  </div>
+        
+                  <div class="col-lg-3 radio-div"> <input type="radio" id="connect-skpye" name="connection-type" value="Skpye" />
+                      <label for="connect-skpye">skype</label>
+                  </div>
+                  <div class="col-lg-3 radio-div"> <input type="radio" id="connect-telegram" name="connection-type" value="Telegram" />
+                      <label for="connect-telegram">telegram</label>
+                  </div>
+        
+              </div>
+        
+              <div class="submit">
+                <button class="btn btn-primary" type="submit" id="form_button" name="submit">submit</button>
+              </div>
+          </form>
+          </div>
+        
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyf73HHPZ2V7sWjpwOCqRnUpXMVrNmgeBiJ9LsRuhj3rTJO8R4MCpZowf8Ci56LAIfG/exec'
+        const form = document.forms['publisherForm']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+
+</html>
