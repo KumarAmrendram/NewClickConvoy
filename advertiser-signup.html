@@ -16,26 +16,28 @@
 
 <body>
     <div id="container">
-        <h1>&bull; ClickConvoy Advertiser Signup &bull;</h1>
-        <p class="text-center">Advertise, analyze, and optimize! We do it all for you
-
-        </p>
-
+        <div class="row">
+            <div class="col col-sm-6 text-center"><img src="./assets/img/new-logo.png" alt=""></div>
+            <div class="col cl-sm-6 text-center ps-4">
+                <h1 class="heading adv-heading">Advertiser Signup</h1>
+            </div>
+        </div>
+        <p class="text-center">Advertise, analyze, and optimize! We do it all for you</p>
         <div class="underline">
         </div>
         <div class="">
-            <form  method="post" id="contact_form" name="publisherForm">
-              <div class="name">
+            <form  method="post" id="contact_form" name="AdvertiserForm">
+              <div class="adv-name">
                   <label for="name"></label>
-                  <input type="text" placeholder="My name is" name="name" id="name_input" >
+                  <input type="text" placeholder="Name" name="name" id="name_input" required >
               </div>
-              <div class="skype">
+              <div class="company">
                 <label for="name"></label>
-                <input type="text" placeholder="My company name is" name="CompanyName" id="address_input" >
+                <input type="text" placeholder="Company Name" name="CompanyName" id="address_input" required >
             </div>
             <div class="subject">
                 <label for="subject"></label>
-                <select placeholder="Subject line" name="CompanyType" id="subject_input" >
+                <select placeholder="Subject line" name="CompanyType" id="subject_input" required >
                     <option disabled hidden selected>Account Type</option>
                     <option>Private Ltd</option>
                     <option>Private Ltd</option>
@@ -46,16 +48,16 @@
             </div>
             <div class="telephone">
                 <label for="name"></label>
-                <input type="text" placeholder="My number is" name="phone" id="telephone_input" >
+                <input type="text" placeholder="Phone" name="phone" id="telephone_input" required >
             </div>
               <div class="adv-email">
                   <label for="email"></label>
-                  <input type="email" placeholder="My e-mail is" name="email" id="email_input" >
+                  <input type="email" placeholder="e-mail" name="email" id="email_input" required >
               </div>
 
               <div class="skype">
                   <label for="skype"></label>
-                  <input type="text" placeholder="Skype" name="skype" id="skype_input" >
+                  <input type="text" placeholder="Skype" name="skype" id="skype_input" required >
               </div>
               <div class="telegram">
                   <label for="telegram"></label>
@@ -70,8 +72,8 @@
     </div>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyf73HHPZ2V7sWjpwOCqRnUpXMVrNmgeBiJ9LsRuhj3rTJO8R4MCpZowf8Ci56LAIfG/exec'
-        const form = document.forms['publisherForm']
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwSrVZT5cVAg_gnXZjBXOv4E3dYM0PRlxoZOu7xDKm7p8lOFnZh0aUKnlm3BpoK4gAs/exec'
+        const form = document.forms['AdvertiserForm']
       
         form.addEventListener('submit', e => {
           e.preventDefault()

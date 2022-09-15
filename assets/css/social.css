@@ -1,0 +1,61 @@
+/* Floating Social Media Bar Style Starts Here */
+
+.fl-fl {
+    background: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 4px;
+    width: 190px;
+    position: fixed;
+    right: -160px;
+    z-index: 90;
+    font: normal normal 10px Arial;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    cursor: pointer;
+  }
+  .fa-brands {
+    font-size: 20px;
+    color: #0073cf;
+    padding: 10px 0;
+    width: 40px;
+    margin-left: 8px;
+  }
+  .fl-fl:hover {
+    right: 0;
+  }
+  
+  .fl-fl a {
+    color: #0073cf !important;
+    text-decoration: none;
+    text-align: center;
+    line-height: 43px !important;
+    vertical-align: top !important;
+  }
+  
+  .fl-fl a i {
+    margin-left: -6px;
+  }
+  
+  .float-ln {
+    top: 160px;
+    font-size: 0.62em;
+    letter-spacing: 2px;
+  }
+  
+  .float-fb {
+    top: 215px;
+  }
+  
+  .float-ig {
+    top: 270px;
+  }
+  
+  .float-tl {
+    top: 325px;
+  
+  }
+  /* Floating Social Media Bar Style Ends Here */
