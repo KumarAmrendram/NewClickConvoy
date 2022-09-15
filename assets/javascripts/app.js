@@ -91,8 +91,8 @@ tl.from(".banner-head,.block", { x: -100, duration: 1, opacity: 0 })
   gsap.from(".pub-box1", {
     x: -100,
     opacity: 0,
-    delay: 1,
-    duration: 0.5,
+    delay: 0.5,
+    duration: 1,
     scale:0.3,
     scrollTrigger: ".pub-box1",
     start: "top center",
@@ -100,8 +100,8 @@ tl.from(".banner-head,.block", { x: -100, duration: 1, opacity: 0 })
   gsap.from(".pub-box2", {
     x: 100,
     opacity: 0,
-    delay: 1,
-    duration: 0.5,
+    delay: 0.5,
+    duration: 1,
     scale:0.3,
     scrollTrigger: ".pub-box2",
     start: "top center",
@@ -109,8 +109,8 @@ tl.from(".banner-head,.block", { x: -100, duration: 1, opacity: 0 })
   gsap.from(".pub-box3", {
     x: -100,
     opacity: 0,
-    delay: 1,
-    duration: 0.5,
+    delay: 0.5,
+    duration: 1,
     scale:0.3,
     scrollTrigger: ".pub-box3",
     start: "top center",
@@ -118,8 +118,8 @@ tl.from(".banner-head,.block", { x: -100, duration: 1, opacity: 0 })
   gsap.from(".pub-box4", {
     x: 100,
     opacity: 0,
-    delay: 1,
-    duration: 0.5,
+    delay: 0.5,
+    duration: 1,
     scale:0.3,
     scrollTrigger: ".pub-box4",
     start: "top center",
@@ -127,12 +127,28 @@ tl.from(".banner-head,.block", { x: -100, duration: 1, opacity: 0 })
   gsap.from(".pub-box5", {
     x: -100,
     opacity: 0,
-    delay: 1,
-    duration: 0.5,
+    delay: 0.5,
+    duration: 1,
     scale:0.3,
     scrollTrigger: ".pub-box5",
     start: "top center",
   });
+
+  // mission para
+gsap.from('.para',{
+  scale:0,
+  y:-100,
+  duration:1,
+  scrollTrigger:'.para'
+})
+
+gsap.from('.mis-img',{
+  scale:0,
+  // y:100,
+  duration:1,
+  stagger:0.2,
+  scrollTrigger:'.mis-img'
+})
 }
 
 
