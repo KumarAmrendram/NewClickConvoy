@@ -83,7 +83,7 @@ a {
 
 @media (max-width: 560px) {
   .hero-section {
-    height: 85vh;
+    height: 91vh;
   }
 }
 
@@ -94,8 +94,15 @@ a {
 }
 
 @media (max-width: 768px) {
-  .banner .banner-head {
+  .banner span.block {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .banner .banner-head {
+    margin-top: 50px;
+    font-size: 5rem !important;
   }
 }
 
@@ -275,6 +282,10 @@ a {
 .slider .slide {
   height: 100px;
   width: 250px;
+}
+
+.slide.nutrayogi img {
+  width: 170px !important;
 }
 
 /* missionM*/

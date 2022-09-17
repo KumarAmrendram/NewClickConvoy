@@ -1,35 +1,56 @@
-function visible(partial) {
-  var $t = partial,
-    $w = jQuery(window),
-    viewTop = $w.scrollTop(),
-    viewBottom = viewTop + $w.height(),
-    _top = $t.offset().top,
-    _bottom = _top + $t.height(),
-    compareTop = partial === true ? _bottom : _top,
-    compareBottom = partial === true ? _top : _bottom;
-
-  return (
-    compareBottom <= viewBottom && compareTop >= viewTop && $t.is(":visible")
-  );
-}
-
+var a = 0;
 $(window).scroll(function () {
-  if (visible($(".count-digit"))) {
-    if ($(".count-digit").hasClass("counter-loaded")) return;
-    $(".count-digit").addClass("counter-loaded");
-
-    $(".count-digit").each(function () {
-      var $this = $(this);
-      jQuery({ Counter: 0 }).animate(
-        { Counter: $this.text() },
+  var oTop = $("#counter-box").offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $(".counter").each(function () {
+      var $this = $(this),
+        countTo = $this.attr("data-number");
+      $({
+        countNum: $this.text(),
+      }).animate(
         {
-          duration: 4000,
+          countNum: countTo,
+        },
+
+        {
+          duration: 2000,
           easing: "swing",
           step: function () {
-            $this.text(Math.ceil(this.Counter));
+            //$this.text(Math.ceil(this.countNum));
+            $this.text(Math.ceil(this.countNum).toLocaleString("en") + "+");
+          },
+          complete: function () {
+            $this.text(Math.ceil(this.countNum).toLocaleString("en") + "+");
+            //alert('finished');
           },
         }
       );
     });
+    $(".counter-4").each(function () {
+      var $this = $(this),
+        countTo = $this.attr("data-number");
+      $({
+        countNum: $this.text(),
+      }).animate(
+        {
+          countNum: countTo,
+        },
+
+        {
+          duration: 2000,
+          easing: "swing",
+          step: function () {
+            //$this.text(Math.ceil(this.countNum));
+            $this.text(Math.ceil(this.countNum).toLocaleString("en") + "Mn+");
+          },
+          complete: function () {
+            $this.text(Math.ceil(this.countNum).toLocaleString("en") + "Mn+");
+            //alert('finished');
+          },
+        }
+      );
+    });
+    a = 1;
   }
 });
+
