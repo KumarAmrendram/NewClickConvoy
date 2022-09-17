@@ -11,12 +11,12 @@
   height: 33vmin;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 1em 0;
+  justify-content: center;
   border-radius: 0.5em;
   background-color: #0073cf;
   margin: 15px;
 }
+
 
 span.count-digit {
   color: #ffffff;
@@ -24,6 +24,7 @@ span.count-digit {
   place-items: center;
   font-weight: 600;
   font-size: 3em;
+  line-height: 1.5em;
 }
 span.count-title {
   color: #e0e0e0;
@@ -36,12 +37,14 @@ span.count-title {
 @media (max-width: 560px) {
   
   .join-wrapper {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 15em;
   }
 
   .join-container {
-    margin-bottom: 20px;
+    /* width: 33em !important;
+    height: 33em !important; */
+    /* margin: 100px; */
     background-color: transparent;
   }
 
