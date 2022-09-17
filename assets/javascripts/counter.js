@@ -26,6 +26,30 @@ $(window).scroll(function () {
         }
       );
     });
+    $(".counter-3").each(function () {
+      var $this = $(this),
+        countTo = $this.attr("data-number");
+      $({
+        countNum: $this.text(),
+      }).animate(
+        {
+          countNum: countTo,
+        },
+
+        {
+          duration: 2000,
+          easing: "swing",
+          step: function () {
+            //$this.text(Math.ceil(this.countNum));
+            $this.text(Math.ceil(this.countNum).toLocaleString("en") + "k+");
+          },
+          complete: function () {
+            $this.text(Math.ceil(this.countNum).toLocaleString("en") + "k+");
+            //alert('finished');
+          },
+        }
+      );
+    });
     $(".counter-4").each(function () {
       var $this = $(this),
         countTo = $this.attr("data-number");
@@ -41,10 +65,10 @@ $(window).scroll(function () {
           easing: "swing",
           step: function () {
             //$this.text(Math.ceil(this.countNum));
-            $this.text(Math.ceil(this.countNum).toLocaleString("en") + "Mn+");
+           $this.text('1.' + Math.ceil(this.countNum).toLocaleString("en") + "Mn+");
           },
           complete: function () {
-            $this.text(Math.ceil(this.countNum).toLocaleString("en") + "Mn+");
+            $this.text('1.' + Math.ceil(this.countNum).toLocaleString("en") + "Mn+");
             //alert('finished');
           },
         }
