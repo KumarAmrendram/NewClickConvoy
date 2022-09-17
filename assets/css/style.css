@@ -208,13 +208,13 @@ a {
 /* Join us */
 
 @media (min-width: 768px) {
-  .join-us {
+  .stats {
     padding-top: 4em !important;
     height: 90vh;
   }
 }
 
-.join-us h1 {
+.stats h1 {
   font-size: 3rem;
   font-weight: 500;
   margin-bottom: 25px;
