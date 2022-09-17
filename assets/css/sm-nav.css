@@ -50,9 +50,9 @@
   transform: translateX(0);
   transition: transform var(--nav-duration) var(--ease);
 }
-.icon--menu {
+/* .icon--menu {
   stroke: #046cd2;
-}
+} */
 .icon--close {
   stroke: var(--color-secondary);
   transform: translateX(-100%);

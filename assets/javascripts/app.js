@@ -41,6 +41,24 @@ tl.from(".banner-head,.block", { x: -100, duration: 1, opacity: 0 })
     scrollTrigger: ".offer-box4",
     start: "top top",
   });
+
+  gsap.from(".offer-box5", {
+    y: -100,
+    opacity: 0,
+    delay: 1,
+    duration: 1,
+    scrollTrigger: ".offer-box5",
+    start: "top top",
+  });
+
+  gsap.from(".offer-box6", {
+    y: -100,
+    opacity: 0,
+    delay: 1,
+    duration: 1,
+    scrollTrigger: ".offer-box6",
+    start: "top top",
+  });
 }
 
 {//adv boxes8
@@ -144,14 +162,78 @@ gsap.from('.para',{
 
 gsap.from('.mis-img',{
   scale:0,
-  // y:100,
   duration:1,
   stagger:0.2,
   scrollTrigger:'.mis-img'
 })
 }
 
+{//offer boxes
+  gsap.from(".card-1", {
+    y: -100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: ".card-1",
+    start: "top top",
+  });
+  gsap.from(".card-2", {
+    y: -100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: ".card-2",
+    start: "top top",
+  });
+  gsap.from(".card-3", {
+    y: -100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: ".card-3",
+    start: "top top",
+  });
+  gsap.from(".card-4", {
+    y: -100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: ".card-4",
+    start: "top top",
+  });
+}
 
+{//join us boxes
+  gsap.from(".join-box1", {
+    opacity: 0,
+    delay: 0.5,
+    duration: 1,
+    scale:0.3,
+    scrollTrigger: ".join-box1",
+    start: "top center",
+  });
+  gsap.from(".join-box2", {
+    opacity: 0,
+    delay: 0.5,
+    duration: 1,
+    scale:0.3,
+    scrollTrigger: ".join-box2",
+    start: "top center",
+  });
+  gsap.from(".join-box3", {
+    opacity: 0,
+    delay: 0.5,
+    duration: 1,
+    scale:0.3,
+    scrollTrigger: ".join-box3",
+    start: "top center",
+  });
+  gsap.from(".join-box4", {
+    opacity: 0,
+    delay: 0.5,
+    duration: 1,
+    scale:0.3,
+    scrollTrigger: ".join-box4",
+    start: "top center",
+  });
+
+}
 
 
 // gsap.from(".pub-box1,.pub-box2,.pub-box3,.pub-box4,.pub-box5", {
