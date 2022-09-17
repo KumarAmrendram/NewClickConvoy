@@ -513,3 +513,35 @@ background-color: #43e5f7;
 }
 
 
+==================================================================================================================
+      <div class="join-wrapper" data-diff="100">
+         <div class="row text-center">
+            <div class="col">
+               <div class="join-container">
+                  <span class="count-digit">9</span>
+                  <span class="count-title">750+ active users</span>
+               </div>
+            </div>
+            <div class="col">
+               <div class="join-container">
+                  <span class="count-digit">80</span>
+                  <span class="count-title">50+ active geolocations
+                  </span>
+               </div>
+            </div>
+            <div class="col">
+               <div class="join-container">
+                  <span class="count-digit">742</span>
+                  <span class="count-title"> 75+ advertisers with unique offers
+                  </span>
+               </div>
+            </div>
+            <div class="col">
+               <div class="join-container">
+                  <span class="count-digit">1200</span>
+                  <span class="count-title"> 75+ own exclusive offers & in-house call center
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>

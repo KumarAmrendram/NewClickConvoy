@@ -1,15 +1,34 @@
-let valueDisplays = document.querySelectorAll(".num");
-let interval = 4000;
+function visible(partial) {
+  var $t = partial,
+      $w = jQuery(window),
+      viewTop = $w.scrollTop(),
+      viewBottom = viewTop + $w.height(),
+      _top = $t.offset().top,
+      _bottom = _top + $t.height(),
+      compareTop = partial === true ? _bottom : _top,
+      compareBottom = partial === true ? _top : _bottom;
 
-valueDisplays.forEach((valueDisplay) => {
-  let startValue = 0;
-  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-  let duration = Math.floor(interval / endValue);
-  let counter = setInterval(function () {
-    startValue += 1;
-    valueDisplay.textContent = startValue + '+';
-    if (startValue == endValue) {
-      clearInterval(counter);
-    }
-  }, duration);
+  return ((compareBottom <= viewBottom) && (compareTop >= viewTop) && $t.is(':visible'));
+
+}
+
+$(window).scroll(function(){
+
+if(visible($('.count-digit')))
+  {
+    if($('.count-digit').hasClass('counter-loaded')) return;
+    $('.count-digit').addClass('counter-loaded');
+    
+$('.count-digit').each(function () {
+var $this = $(this);
+jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+  duration: 5000,
+  easing: 'swing',
+  step: function () {
+    $this.text(Math.ceil(this.Counter));
+  }
 });
+});
+  }
+})
+
