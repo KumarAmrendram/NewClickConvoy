@@ -321,7 +321,8 @@ a {
   }
 
   .mission {
-    height: fit-content;
+    height: max-content;
+    padding-bottom: 10px;
   }
 }
 
