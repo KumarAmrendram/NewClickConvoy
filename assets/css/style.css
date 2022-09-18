@@ -225,8 +225,12 @@ a {
 @media (min-width: 768px) {
   .stats {
     padding-top: 4em !important;
-    height: 90vh;
+    height: 93vh;
   }
+}
+
+.main-heading3,.main-heading4 {
+  margin-bottom: 0.8em !important;
 }
 
 .stats h1 {
