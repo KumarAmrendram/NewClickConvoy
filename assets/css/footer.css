@@ -2,13 +2,15 @@
     background: #007ccf;
     padding: 10px 0px;
     text-align: center;
+    color: #000 !important;
+
+    font-weight: 500;
   }
   
   .footer .frow {
     width: 100%;
     margin: 5px 0%;
     padding:0;
-    color: gray;
     font-size: 1rem;
   }
   
@@ -20,7 +22,6 @@
   
   .footer .frow a {
     text-decoration: none;
-    color: gray;
     transition: 0.5s;
   }
   
