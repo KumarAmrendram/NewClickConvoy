@@ -136,6 +136,13 @@ a {
   margin-left: 0 !important;
 }
 
+@media (max-width:568px){
+  .banner .banner-text {
+    font-size: 1.3rem !important;
+    margin-left: 0 !important;
+  }
+}
+
 /* Advertisers */
 
 .advertiser .adv-img {
