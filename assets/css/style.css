@@ -319,6 +319,10 @@ a {
   .mission .mis-img {
     width: 60px;
   }
+
+  .mission {
+    height: fit-content;
+  }
 }
 
 /* Footer */
