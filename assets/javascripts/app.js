@@ -61,46 +61,51 @@ tl.from(".banner-head,.block", { x: -100, duration: 1, opacity: 0 })
   });
 }
 
-{//adv boxes8
+{//pub boxes8
   gsap.from(".adv-box1", {
-    y: -100,
+    x: -100,
     opacity: 0,
     delay: 0.5,
     duration: 1,
+    scale:0.3,
     scrollTrigger: ".adv-box1",
-    start: "top top",
+    start: "top center",
   });
   gsap.from(".adv-box2", {
-    y: 100,
+    x: 100,
     opacity: 0,
     delay: 0.5,
     duration: 1,
+    scale:0.3,
     scrollTrigger: ".adv-box2",
-    start: "top top",
+    start: "top center",
   });
   gsap.from(".adv-box3", {
-    y: -100,
+    x: -100,
     opacity: 0,
     delay: 0.5,
     duration: 1,
+    scale:0.3,
     scrollTrigger: ".adv-box3",
-    start: "top top",
+    start: "top center",
   });
   gsap.from(".adv-box4", {
-    y: -100,
+    x: 100,
     opacity: 0,
     delay: 0.5,
     duration: 1,
+    scale:0.3,
     scrollTrigger: ".adv-box4",
-    start: "top top",
+    start: "top center",
   });
   gsap.from(".adv-box5", {
-    y: -100,
+    x: -100,
     opacity: 0,
     delay: 0.5,
     duration: 1,
+    scale:0.3,
     scrollTrigger: ".adv-box5",
-    start: "top top",
+    start: "top center",
   });
 }
 
