@@ -326,17 +326,10 @@ a {
 }
 
 /* Footer */
-.footer {
-  position: relative;
-  color: #fff;
-  text-align: center;
-  z-index: 1001;
-}
 
-#footer-container {
-  /* position: absolute; */
-  background-color: black;
-  width: 100%;
-  align-items: center;
-  bottom: 0;
+@media (min-width: 568px) {
+
+  .f-col {
+    padding: 0 1em;
+  }
 }
