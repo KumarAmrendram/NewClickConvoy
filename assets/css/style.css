@@ -341,14 +341,14 @@ li {
 }
 
 /* DYNAMic TEXT */
-.dynamic-text {
-  /* position: absolute; */
-  /* top: 50%; */
-  /* transform: translateY(-50%); */
-  /* margin: 0; */
-  /* padding: 0; */
-  /* width: 100%; */
-  /* text-align: center; */
+.banner-text-box {
+  height: 100px;
 }
 
-/* <span class="dynamic-text">Hello! How are you?<br><span class="ityped"></span></span> */
+
+@media (max-width: 568px) {
+  .banner-text-box {
+    height: 50px;
+    margin-bottom: 50px !important;
+  }
+}
