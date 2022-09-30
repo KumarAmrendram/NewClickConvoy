@@ -349,7 +349,7 @@ ul,li {
   font-family: 'Montserrat';
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange;
+  border-right: .15em solid black;
   /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
@@ -382,6 +382,6 @@ ul,li {
   }
 
   50% {
-      border-color: orange
+      border-color: black
   }
 }
