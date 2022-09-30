@@ -2,628 +2,654 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- Tailwind CSS -->
-   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-   <!-- Fontawesome kit -->
-   <script src="https://kit.fontawesome.com/4595b8e94f.js" crossorigin="anonymous"></script>
-   <!-- Bootstrap 5 -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-   <title>ClickConvoy</title>
-   <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
-   <link rel="stylesheet" href="./assets/css/style.css">
-   <link rel="stylesheet" href="assets/css/social.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <!-- Fontawesome kit -->
+    <script src="https://kit.fontawesome.com/4595b8e94f.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>ClickConvoy</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/social.css">
 </head>
 
 <body>
-   <section class="hero-section">
-      <div class="sm-nav">
-         <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
-         <label for="page-nav-toggle">
-            <svg class="icon--menu-toggle" viewBox="0 0 60 30">
-               <g class="icon-group">
-                  <g class="icon--menu">
-                     <path d="M 6 0 L 54 0" />
-                     <path d="M 6 15 L 54 15" />
-                     <path d="M 6 30 L 54 30" />
-                  </g>
-                  <g class="icon--close">
-                     <path d="M 15 0 L 45 30" />
-                     <path d="M 15 30 L 45 0" />
-                  </g>
-               </g>
-            </svg>
-         </label>
-         <nav class="main-navigation">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-               <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#offerings">Offerings</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#advertisers">Advertiser</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#publishers">Publisher</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#stats">Stats</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#mission">Mission</a>
-               </li>
-            </ul>
-         </nav>
-      </div>
-      <div id="navigation">
-         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-               <a class="navbar-brand" href="#"><img class="adv-img" src="./assets/img/new-logo.png" alt=""></a>
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="nav-hide collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                     <li class="nav-item">
+    <section class="hero-section">
+        <div class="sm-nav">
+            <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+            <label for="page-nav-toggle">
+                <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+                    <g class="icon-group">
+                        <g class="icon--menu">
+                            <path d="M 6 0 L 54 0" />
+                            <path d="M 6 15 L 54 15" />
+                            <path d="M 6 30 L 54 30" />
+                        </g>
+                        <g class="icon--close">
+                            <path d="M 15 0 L 45 30" />
+                            <path d="M 15 30 L 45 0" />
+                        </g>
+                    </g>
+                </svg>
+            </label>
+            <nav class="main-navigation">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-                     </li>
-                     <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#offerings">Offerings</a>
-                     </li>
-                     <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#advertisers">Advertiser</a>
-                     </li>
-                     <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#publishers">Publisher</a>
-                     </li>
-                     <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#stats">Stats</a>
-                     </li>
-                     <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#mission">Mission</a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </nav>
-      </div>
-      <section class="banner">
-         <div class="relative overflow-hidden ">
-            <div class="mx-auto max-w-7xl">
-               <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
-                  <main class="mx-auto max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-10 lg:px-8 xl:mt-2">
-                     <div class="sm:text-center lg:text-left">
-                        <h1 class="banner-head text-4xl font-bold ms-3 pt-4  md:text-6xl">
-                           <span class="block">UNLEASH THE <br> NEW AGE OF</span>
-                            <div class="con">
-                                <div class="dynamic-type">
-                                    <span class="text-dynamic block text-600 true-blue">PERFORMANCE</span>
-                                    <span class="text-dynamic block text-600 true-blue">MARKETING</span>                           
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="navigation">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="adv-img" src="./assets/img/new-logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="nav-hide collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#offerings">Offerings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#advertisers">Advertiser</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#publishers">Publisher</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#stats">Stats</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mission">Mission</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section class="banner">
+            <div class="relative overflow-hidden ">
+                <div class="mx-auto max-w-7xl">
+                    <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
+                        <main class="mx-auto max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-10 lg:px-8 xl:mt-2">
+                            <div class="sm:text-center lg:text-left">
+                                <h1 class="banner-head text-4xl font-bold ms-3 pt-4  md:text-6xl">
+                                    <span class="block">UNLEASH THE <br> NEW AGE OF</span>
+                                    <span class="dynamic-text block text-600 true-blue"><span class="ityped"></span></span>
+                                    <script src="https://unpkg.com/ityped@0.0.10"></script>
+                                    <script>
+                                        window.ityped.init(document.querySelector('.ityped'), {
+                                            strings: ['PERFROMANCE MARKETING', 'ADVERTISERS','PUBLISHERS'],
+                                            loop: true
+                                        })
+                                    </script>
+                                    <!-- <span class="dynamic-text block text-600 true-blue">MARKETING</span> -->
+
+                                </h1>
+                                <span class="ps-2 mt-5">
+                                    <span class=" mt-2">
+                                        <h4 class="banner-text">Accelerate your Growth</h4>
+                                    </span>
+                                    <span class=" mt-2">
+                                        <h4 class="banner-text">Trending offers, Max Return</h4>
+                                    </span>
+                                    <span class=" mt-2">
+                                        <h4 class="banner-text">Clicks for us, BUCK$ for you</h4>
+                                    </span>
+                                </span>
+                                <div class="mt-5 banner-button sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                                    <div class="rounded-md">
+                                        <a href="./advertiser-signup.html"
+                                            class="bg-true-blue mt-1 flex w-full items-center justify-center rounded-md border border-transparent bg-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg">
+                                            Advertisers</a>
+                                    </div>
+                                    <div class="banner-button sm:mt-0 sm:ml-3">
+                                        <a href="./publisher-signup.html"
+                                            class="true-blue flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200 md:py-4 md:px-10 md:text-lg">
+                                            Publishers</a>
+                                    </div>
                                 </div>
                             </div>
-                        </h1>
-                        <span class="ps-2 mt-5">
-                           <span class=" mt-2">
-                              <h4 class="banner-text">Accelerate your Growth</h4>
-                           </span>
-                           <span class=" mt-2">
-                              <h4 class="banner-text">Trending offers, Max Return</h4>
-                           </span>
-                           <span class=" mt-2">
-                              <h4 class="banner-text">Clicks for us, BUCK$ for you</h4>
-                           </span>
-                        </span>
-                        <div class="mt-5 banner-button sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                           <div class="rounded-md">
-                              <a href="./advertiser-signup.html"
-                                 class="bg-true-blue mt-1 flex w-full items-center justify-center rounded-md border border-transparent bg-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg">
-                                 Advertisers</a>
-                           </div>
-                           <div class="banner-button sm:mt-0 sm:ml-3">
-                              <a href="./publisher-signup.html"
-                                 class="true-blue flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200 md:py-4 md:px-10 md:text-lg">
-                                 Publishers</a>
-                           </div>
-                        </div>
-                     </div>
-                  </main>
-               </div>
+                        </main>
+                    </div>
+                </div>
+                <div class="banner-img lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                    <img class="mt-2" src="./assets/img/banner-img.webp" alt="">
+                </div>
             </div>
-            <div class="banner-img lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-               <img class="mt-2" src="./assets/img/banner-img.webp" alt="">
+        </section>
+    </section>
+    <div class="social-media-buttons">
+        <div class="social">
+            <div class="float-sm">
+                <div class="fl-fl float-fb">
+                    <a href="https://www.facebook.com/ClickConvoy/" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i>Like
+                        us!</a>
+                </div>
+                <div class="fl-fl float-tl">
+                    <a href="https://telegram.me/clickconvoy" target="_blank"><i class="fa-brands fa-telegram"></i>
+                        Follow us!</a>
+                </div>
+                <div class="fl-fl float-ig">
+                    <a href="https://www.instagram.com/clickconvoy/?hl=en" target="_blank"><i
+                            class="fa-brands fa-instagram"></i>Follow us!</a>
+                </div>
+                <div class="fl-fl float-ln">
+                    <a href="https://www.linkedin.com/company/clickconvoy/about/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i>Connect With us!</a>
+                </div>
             </div>
-         </div>
-      </section>
-   </section>
-   <div class="social-media-buttons">
-      <div class="social">
-         <div class="float-sm">
-            <div class="fl-fl float-fb">
-               <a href="https://www.facebook.com/ClickConvoy/" target="_blank"><i
-                     class="fa-brands fa-facebook-f"></i>Like
-                  us!</a>
-            </div>
-            <div class="fl-fl float-tl">
-               <a href="https://telegram.me/clickconvoy" target="_blank"><i class="fa-brands fa-telegram"></i>
-                  Follow us!</a>
-            </div>
-            <div class="fl-fl float-ig">
-               <a href="https://www.instagram.com/clickconvoy/?hl=en" target="_blank"><i
-                     class="fa-brands fa-instagram"></i>Follow us!</a>
-            </div>
-            <div class="fl-fl float-ln">
-               <a href="https://www.linkedin.com/company/clickconvoy/about/" target="_blank"><i
-                     class="fa-brands fa-linkedin-in"></i>Connect With us!</a>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- offer section -->
-   <section class="offerings" id="offerings">
-      <div class="mt-3 bg-white py-12">
-         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-               <p class="mt-2 service-main-heading text-3xl font-bold leading-8 tracking text-gray-900 sm:text-4xl">Our
-                  Offerings</p>
-               <p class="para mt-4 max-w-4xl text-xl text-gray-500 lg:mx-auto">ClickConvoy provides offers for all types
-                  of traffic. We our making BIG BUCK$ on verticals like Nutra (COD, SS, Trials),Ecommerce,
-                  finance, Gaming, Sweepstakes, Gambling & many more. After you sign up, a personal manager will
-                  get in touch with you and assist you in selecting the best offer from the more than 350 that are
-                  available.
-               </p>
-            </div>
-            <div class="mt-10">
-               <dl class="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
+        </div>
+    </div>
+    <!-- offer section -->
+    <section class="offerings" id="offerings">
+        <div class="mt-3 bg-white py-12">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="lg:text-center">
+                    <p
+                        class="mt-2 service-main-heading text-3xl font-bold leading-8 tracking text-gray-900 sm:text-4xl">
+                        Our
+                        Offerings</p>
+                    <p class="para mt-4 max-w-4xl text-xl text-gray-500 lg:mx-auto">ClickConvoy provides offers for all
+                        types
+                        of traffic. We our making BIG BUCK$ on verticals like Nutra (COD, SS, Trials),Ecommerce,
+                        finance, Gaming, Sweepstakes, Gambling & many more. After you sign up, a personal manager will
+                        get in touch with you and assist you in selecting the best offer from the more than 350 that are
+                        available.
+                    </p>
+                </div>
+                <div class="mt-10">
+                    <dl class="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
 
-                  <div class="relative offer-box1">
-                     <dt>
-                        <div
-                           class="bg-true-blue bg-true-blue absolute flex h-12 w-12 items-center justify-center rounded-md bg-500 text-white">
-                           <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                              stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                              <path stroke-linecap="round" stroke-linejoin="round"
-                                 d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
-                           </svg>
+                        <div class="relative offer-box1">
+                            <dt>
+                                <div
+                                    class="bg-true-blue bg-true-blue absolute flex h-12 w-12 items-center justify-center rounded-md bg-500 text-white">
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                    </svg>
+                                </div>
+                                <p class="ml-16 text-lg font-medium leading-6 text-gray-900">App Installation(CPI)</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">CPI pricing model enables advertisers to pay
+                                only
+                                for actual installations. We provide both Incent & Non-Incent Traffic as per your need.
+                                “Cost
+                                Per Install remains to be one of the most important metrics for mobile app owners to
+                                measure.
+                                For companies that extend their existing business on mobile, CPI is a real indicator of
+                                investment they need to make to include mobile
+                                into the mix of channels, they use to reach out to their customers.
+                            </dd>
                         </div>
-                        <p class="ml-16 text-lg font-medium leading-6 text-gray-900">App Installation(CPI)</p>
-                     </dt>
-                     <dd class="mt-2 ml-16 text-base text-gray-500">CPI pricing model enables advertisers to pay only
-                        for actual installations. We provide both Incent & Non-Incent Traffic as per your need. “Cost
-                        Per Install remains to be one of the most important metrics for mobile app owners to measure.
-                        For companies that extend their existing business on mobile, CPI is a real indicator of
-                        investment they need to make to include mobile
-                        into the mix of channels, they use to reach out to their customers.
-                     </dd>
-                  </div>
-                  <div class="relative offer-box2">
-                     <dt>
-                        <div
-                           class="bg-true-blue absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
-                           <!-- Heroicon name: outline/scale -->
-                           <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                              stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                              <path stroke-linecap="round" stroke-linejoin="round"
-                                 d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
-                           </svg>
+                        <div class="relative offer-box2">
+                            <dt>
+                                <div
+                                    class="bg-true-blue absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+                                    <!-- Heroicon name: outline/scale -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
+                                    </svg>
+                                </div>
+                                <p class="ml-16 text-lg font-medium leading-6 text-gray-900">Leads Generation(CPL)</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">We make sure that the traffic running to your
+                                campaigns is consists of actual customers who are eager to buy your good or service. To
+                                make
+                                sure you get qualified leads or sales for your offers, your account manager will keep an
+                                eye on
+                                your traffic. Buying leads, as opposed to organically generating them, is much easier
+                                and takes
+                                far less time and effort, despite being less expensive.
+                            </dd>
                         </div>
-                        <p class="ml-16 text-lg font-medium leading-6 text-gray-900">Leads Generation(CPL)</p>
-                     </dt>
-                     <dd class="mt-2 ml-16 text-base text-gray-500">We make sure that the traffic running to your
-                        campaigns is consists of actual customers who are eager to buy your good or service. To make
-                        sure you get qualified leads or sales for your offers, your account manager will keep an eye on
-                        your traffic. Buying leads, as opposed to organically generating them, is much easier and takes
-                        far less time and effort, despite being less expensive.
-                     </dd>
-                  </div>
-                  <div class="relative offer-box3">
-                     <dt>
-                        <div
-                           class="bg-true-blue absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
-                           <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                              stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                              <path stroke-linecap="round" stroke-linejoin="round"
-                                 d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-                           </svg>
+                        <div class="relative offer-box3">
+                            <dt>
+                                <div
+                                    class="bg-true-blue absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                                    </svg>
+                                </div>
+                                <p class="ml-16 text-lg font-medium leading-6 text-gray-900">E-commerce Sales(CPS)</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">CPS advertising campaigns are a great choice
+                                for
+                                more traditional product offerings, sales received on
+                                campaigns rather than flat-marketing fees. Advertisers are able to allocate their
+                                marketing
+                                budgets to specific, real-time, measurable results. allowing advertisers to track each
+                                sale of a
+                                product.
+                                This can work well in the mobile app too.
+                            </dd>
                         </div>
-                        <p class="ml-16 text-lg font-medium leading-6 text-gray-900">E-commerce Sales(CPS)</p>
-                     </dt>
-                     <dd class="mt-2 ml-16 text-base text-gray-500">CPS advertising campaigns are a great choice for
-                        more traditional product offerings, sales received on
-                        campaigns rather than flat-marketing fees. Advertisers are able to allocate their marketing
-                        budgets to specific, real-time, measurable results. allowing advertisers to track each sale of a
-                        product.
-                        This can work well in the mobile app too.
-                     </dd>
-                  </div>
-                  <div class="relative offer-box4">
-                     <dt>
-                        <div
-                           class="bg-true-blue absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
-                           <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                              stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                              <path stroke-linecap="round" stroke-linejoin="round"
-                                 d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
-                           </svg>
+                        <div class="relative offer-box4">
+                            <dt>
+                                <div
+                                    class="bg-true-blue absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                    </svg>
+                                </div>
+                                <p class="ml-16 text-lg font-medium leading-6 text-gray-900">Media Buying</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">Media buying platforms can drive incredible
+                                results,
+                                at a fraction of the cost of other channels. Like any powerful tool, they have to be
+                                used
+                                carefully –
+                                as there are many pitfalls out there for the inexperienced. ClickConvoy has deep
+                                experience with
+                                ad networks
+                                and real-time bidding platforms and will ensure you maximize your budget and deliver
+                                high-quality customers
+                            </dd>
                         </div>
-                        <p class="ml-16 text-lg font-medium leading-6 text-gray-900">Media Buying</p>
-                     </dt>
-                     <dd class="mt-2 ml-16 text-base text-gray-500">Media buying platforms can drive incredible results,
-                        at a fraction of the cost of other channels. Like any powerful tool, they have to be used
-                        carefully –
-                        as there are many pitfalls out there for the inexperienced. ClickConvoy has deep experience with
-                        ad networks
-                        and real-time bidding platforms and will ensure you maximize your budget and deliver
-                        high-quality customers
-                     </dd>
-                  </div>
-                  <div class="relative offer-box5">
-                     <dt>
-                        <div
-                           class="bg-true-blue absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
-                           <img src="./assets/img/offer/influencer.png" alt="">
+                        <div class="relative offer-box5">
+                            <dt>
+                                <div
+                                    class="bg-true-blue absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+                                    <img src="./assets/img/offer/influencer.png" alt="">
+                                </div>
+                                <p class="ml-16 text-lg font-medium leading-6 text-gray-900">Nano/Micro Influencer
+                                    Marketing
+                                </p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">We do direct campaigns with Nano/micro
+                                Influencers
+                                with a social media following of between 5,000 and 50,000 individuals considered
+                                Nano/Micro-influencers.
+                                They have a very high degree of audience interaction and are well-known in their
+                                industry.
+                            </dd>
                         </div>
-                        <p class="ml-16 text-lg font-medium leading-6 text-gray-900">Nano/Micro Influencer Marketing
-                        </p>
-                     </dt>
-                     <dd class="mt-2 ml-16 text-base text-gray-500">We do direct campaigns with Nano/micro Influencers
-                        with a social media following of between 5,000 and 50,000 individuals considered
-                        Nano/Micro-influencers.
-                        They have a very high degree of audience interaction and are well-known in their industry.
-                     </dd>
-                  </div>
-                  <div class="relative offer-box6">
-                     <dt>
-                        <div
-                           class="bg-true-blue absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
-                           <img src="./assets/img/offer/email.png" alt="">
+                        <div class="relative offer-box6">
+                            <dt>
+                                <div
+                                    class="bg-true-blue absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+                                    <img src="./assets/img/offer/email.png" alt="">
+                                </div>
+                                <p class="ml-16 text-lg font-medium leading-6 text-gray-900">Email/SMS/Whatsapp
+                                    Marketing</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">We help brands reach an enormous audience,
+                                build
+                                strong relationships with customers, and increase sales as the open rate of Whatsapp
+                                messages is
+                                way better than SMS & Email.
+                            </dd>
                         </div>
-                        <p class="ml-16 text-lg font-medium leading-6 text-gray-900">Email/SMS/Whatsapp Marketing</p>
-                     </dt>
-                     <dd class="mt-2 ml-16 text-base text-gray-500">We help brands reach an enormous audience, build
-                        strong relationships with customers, and increase sales as the open rate of Whatsapp messages is
-                        way better than SMS & Email.
-                     </dd>
-                  </div>
-               </dl>
+                    </dl>
+                </div>
             </div>
-         </div>
-      </div>
-   </section>
-   <hr>
-   <!-- Advertiser Section -->
-   <section class="advertiser" id="advertisers">
-      <section class="service-section py-1">
-         <div class="container">
-            <div class="row justify-content-center py-3">
-               <div class="col-md-8 col-12 text-center">
-                  <p class="service-main-heading main-heading1">Advertisers</p>
-               </div>
+        </div>
+    </section>
+    <hr>
+    <!-- Advertiser Section -->
+    <section class="advertiser" id="advertisers">
+        <section class="service-section py-1">
+            <div class="container">
+                <div class="row justify-content-center py-3">
+                    <div class="col-md-8 col-12 text-center">
+                        <p class="service-main-heading main-heading1">Advertisers</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="adv-box1 col-md-6 col-lg-4 col-12 d-flex justify-content-center">
+                        <div class="icon-box">
+                            <div class="row">
+                                <div class="col"> <img class="adv-img" src="./assets/img/adv/global-reach.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <p class="service-title "><a href="#">Global Reach</a></p>
+                                </div>
+                            </div>
+                            <p class="">Publishers from all over the globe have registered with us.
+                                You will find traffic from different sources.
+                                .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adv-box2 col-md-6 col-lg-4 col-12 d-flex justify-content-center">
+                        <div class="icon-box">
+                            <div class="row">
+                                <div class="col"> <img class="adv-img" src="./assets/img/adv/traffic.png" alt=""></div>
+                                <div class="col">
+                                    <p class="service-title "><a href="#">Quality Driven Traffic</a></p>
+                                </div>
+                            </div>
+                            <p class="">Your offers will be conveyed to our reputable
+                                affiliates that have demonstrated their calibre.
+                                Assured Quality results.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adv-box3 col-md-6 col-lg-4 col-12 d-flex justify-content-center">
+                        <div class="icon-box">
+                            <div class="row">
+                                <div class="col"> <img class="adv-img" src="./assets/img/adv/amplify profit.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <p class="service-title "><a href="#">Amplify Profits</a></p>
+                                </div>
+                            </div>
+                            <p class="">
+                                The best Payment terms on the market will be provided by our managers.
+                                You will be guaranteed to increase in profits Just Ping us to scale up.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adv-box4 col-md-6 col-lg-6 col-12 d-flex justify-content-center mx-auto">
+                        <div class="icon-box">
+                            <div class="row">
+                                <div class="col"> <img class="adv-img" src="./assets/img/adv/manager.png" alt=""></div>
+                                <div class="col">
+                                    <p class="service-title not "><a href="#">Dedicated Account Manager</a></p>
+                                </div>
+                            </div>
+                            <p class="">
+                                Experience our manager's commitment to your offers
+                                Personal account manager 24/7 with reporting & Transparent statistics.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adv-box5 col-md-6 col-lg-6 col-12 d-flex justify-content-center mx-auto">
+                        <div class="icon-box">
+                            <div class="row">
+                                <div class="col"> <img class="adv-img" src="./assets/img/adv/anti-fraud.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <p class="service-title not"><a href="#">Anti-Fraud Protection</a></p>
+                                </div>
+                            </div>
+                            <p class="">
+                                Totally effective fraud prevention.
+                                Every conversion is reviewed for fraud.
+                                Better Results, Better ROI
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-               <div class="adv-box1 col-md-6 col-lg-4 col-12 d-flex justify-content-center">
-                  <div class="icon-box">
-                     <div class="row">
-                        <div class="col"> <img class="adv-img" src="./assets/img/adv/global-reach.png" alt="">
+        </section>
+    </section>
+    <hr>
+    <!-- Publisher Section -->
+    <section class="publisher" id="publishers">
+        <section class="service-section py-5">
+            <div class="container">
+                <div class="row justify-content-center py-3">
+                    <div class="col-md-8 col-12 text-center">
+                        <p class="service-main-heading main-heading2">Publishers</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="pub-box1 col-md-6 col-lg-6 col-12 d-flex justify-content-center">
+                        <div class="icon-box">
+                            <div class="row">
+                                <div class="col"> <img class="pub-img" src="./assets/img/pub/offers.png" alt=""></div>
+                                <div class="col">
+                                    <p class="service-title "><a href="#">Trending Offers</a></p>
+                                </div>
+                            </div>
+                            <p class="">Every partner is valued in ClickConvoy. Your dedicated personal
+                                affiliate manager advice you & give lot of info on Hot offers.
+                            </p>
                         </div>
-                        <div class="col">
-                           <p class="service-title "><a href="#">Global Reach</a></p>
+                    </div>
+                    <div class="pub-box2 col-md-6 col-lg-6 col-12 d-flex justify-content-center">
+                        <div class="icon-box">
+                            <div class="row">
+                                <div class="col"> <img class="pub-img" src="./assets/img/pub/direct-advertisers.png"
+                                        alt="">
+                                </div>
+                                <div class="col">
+                                    <p class="service-title "><a href="#">Direct Advertisers</a></p>
+                                </div>
+                            </div>
+                            <p class="">
+                                Our own offers will give you best CR on the market.
+                                Find out more from your personal manager.
+                            </p>
                         </div>
-                     </div>
-                     <p class="">Publishers from all over the globe have registered with us.
-                        You will find traffic from different sources.
-                        .
-                     </p>
-                  </div>
-               </div>
-               <div class="adv-box2 col-md-6 col-lg-4 col-12 d-flex justify-content-center">
-                  <div class="icon-box">
-                     <div class="row">
-                        <div class="col"> <img class="adv-img" src="./assets/img/adv/traffic.png" alt=""></div>
-                        <div class="col">
-                           <p class="service-title "><a href="#">Quality Driven Traffic</a></p>
+                    </div>
+                    <div class="pub-box3 col-md-6 col-lg-4 col-12 d-flex justify-content-center">
+                        <div class="icon-box">
+                            <div class="row">
+                                <div class="col"> <img class="pub-img" src="./assets/img/pub/payout.png" alt=""></div>
+                                <div class="col">
+                                    <p class="service-title "><a href="#"> Holistic Payments & Payouts</a></p>
+                                </div>
+                            </div>
+                            <p class="">Weekly / biweekly / monthly payments
+                                with Hottest payout rates globally.
+                            </p>
                         </div>
-                     </div>
-                     <p class="">Your offers will be conveyed to our reputable
-                        affiliates that have demonstrated their calibre.
-                        Assured Quality results.
-                     </p>
-                  </div>
-               </div>
-               <div class="adv-box3 col-md-6 col-lg-4 col-12 d-flex justify-content-center">
-                  <div class="icon-box">
-                     <div class="row">
-                        <div class="col"> <img class="adv-img" src="./assets/img/adv/amplify profit.png" alt="">
+                    </div>
+                    <div class="pub-box4 col-md-6 col-lg-4 col-12 d-flex justify-content-center mx-auto">
+                        <div class="icon-box">
+                            <div class="row">
+                                <div class="col"> <img class="pub-img" src="./assets/img/pub/anti-fraud.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <p class="service-title not "><a href="#"> AFS - Anti Fraud System
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="">
+                                Protection from dishonest advertisers
+                                which allows to keep the quality on top.
+                            </p>
                         </div>
-                        <div class="col">
-                           <p class="service-title "><a href="#">Amplify Profits</a></p>
+                    </div>
+                    <div class="pub-box5 col-md-6 col-lg-4 col-12 d-flex justify-content-center mx-auto">
+                        <div class="icon-box">
+                            <div class="row">
+                                <div class="col"> <img class="pub-img" src="./assets/img/pub/tracking.png" alt=""></div>
+                                <div class="col">
+                                    <p class="service-title not"><a href="#"> Easy Tracking Platform</a></p>
+                                </div>
+                            </div>
+                            <p class="">
+                                Even a newbie can easily get along with
+                                our tracking system
+                            </p>
                         </div>
-                     </div>
-                     <p class="">
-                        The best Payment terms on the market will be provided by our managers.
-                        You will be guaranteed to increase in profits Just Ping us to scale up.
-                     </p>
-                  </div>
-               </div>
-               <div class="adv-box4 col-md-6 col-lg-6 col-12 d-flex justify-content-center mx-auto">
-                  <div class="icon-box">
-                     <div class="row">
-                        <div class="col"> <img class="adv-img" src="./assets/img/adv/manager.png" alt=""></div>
-                        <div class="col">
-                           <p class="service-title not "><a href="#">Dedicated Account Manager</a></p>
-                        </div>
-                     </div>
-                     <p class="">
-                        Experience our manager's commitment to your offers
-                        Personal account manager 24/7 with reporting & Transparent statistics.
-                     </p>
-                  </div>
-               </div>
-               <div class="adv-box5 col-md-6 col-lg-6 col-12 d-flex justify-content-center mx-auto">
-                  <div class="icon-box">
-                     <div class="row">
-                        <div class="col"> <img class="adv-img" src="./assets/img/adv/anti-fraud.png" alt="">
-                        </div>
-                        <div class="col">
-                           <p class="service-title not"><a href="#">Anti-Fraud Protection</a></p>
-                        </div>
-                     </div>
-                     <p class="">
-                        Totally effective fraud prevention.
-                        Every conversion is reviewed for fraud.
-                        Better Results, Better ROI
-                     </p>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </section>
-   </section>
-   <hr>
-   <!-- Publisher Section -->
-   <section class="publisher" id="publishers">
-      <section class="service-section py-5">
-         <div class="container">
-            <div class="row justify-content-center py-3">
-               <div class="col-md-8 col-12 text-center">
-                  <p class="service-main-heading main-heading2">Publishers</p>
-               </div>
-            </div>
-            <div class="row">
-               <div class="pub-box1 col-md-6 col-lg-6 col-12 d-flex justify-content-center">
-                  <div class="icon-box">
-                     <div class="row">
-                        <div class="col"> <img class="pub-img" src="./assets/img/pub/offers.png" alt=""></div>
-                        <div class="col">
-                           <p class="service-title "><a href="#">Trending Offers</a></p>
-                        </div>
-                     </div>
-                     <p class="">Every partner is valued in ClickConvoy. Your dedicated personal
-                        affiliate manager advice you & give lot of info on Hot offers.
-                     </p>
-                  </div>
-               </div>
-               <div class="pub-box2 col-md-6 col-lg-6 col-12 d-flex justify-content-center">
-                  <div class="icon-box">
-                     <div class="row">
-                        <div class="col"> <img class="pub-img" src="./assets/img/pub/direct-advertisers.png" alt="">
-                        </div>
-                        <div class="col">
-                           <p class="service-title "><a href="#">Direct Advertisers</a></p>
-                        </div>
-                     </div>
-                     <p class="">
-                        Our own offers will give you best CR on the market.
-                        Find out more from your personal manager.
-                     </p>
-                  </div>
-               </div>
-               <div class="pub-box3 col-md-6 col-lg-4 col-12 d-flex justify-content-center">
-                  <div class="icon-box">
-                     <div class="row">
-                        <div class="col"> <img class="pub-img" src="./assets/img/pub/payout.png" alt=""></div>
-                        <div class="col">
-                           <p class="service-title "><a href="#"> Holistic Payments & Payouts</a></p>
-                        </div>
-                     </div>
-                     <p class="">Weekly / biweekly / monthly payments
-                        with Hottest payout rates globally.
-                     </p>
-                  </div>
-               </div>
-               <div class="pub-box4 col-md-6 col-lg-4 col-12 d-flex justify-content-center mx-auto">
-                  <div class="icon-box">
-                     <div class="row">
-                        <div class="col"> <img class="pub-img" src="./assets/img/pub/anti-fraud.png" alt="">
-                        </div>
-                        <div class="col">
-                           <p class="service-title not "><a href="#"> AFS - Anti Fraud System
-                              </a>
-                           </p>
-                        </div>
-                     </div>
-                     <p class="">
-                        Protection from dishonest advertisers
-                        which allows to keep the quality on top.
-                     </p>
-                  </div>
-               </div>
-               <div class="pub-box5 col-md-6 col-lg-4 col-12 d-flex justify-content-center mx-auto">
-                  <div class="icon-box">
-                     <div class="row">
-                        <div class="col"> <img class="pub-img" src="./assets/img/pub/tracking.png" alt=""></div>
-                        <div class="col">
-                           <p class="service-title not"><a href="#"> Easy Tracking Platform</a></p>
-                        </div>
-                     </div>
-                     <p class="">
-                        Even a newbie can easily get along with
-                        our tracking system
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-   </section>
-   <hr>
+        </section>
+    </section>
+    <hr>
 
-   <!-- Join us -->
-   <section class="stats service-section container" id="stats">
-      <div class="row justify-content-center">
-         <div class="col-md-8 col-12 text-center">
-            <p class="service-main-heading main-heading3">Stats Matters</p>
-         </div>
-      </div>
-      <div class="row join-row">
-         <div class="col-lg-3 col-6 text-center">
-            <div class="join-container" id="counter-box">
-               <span class="count-digit counter" data-number="40"></span>
-               <span class="count-title">Active Geo locations</span>
+    <!-- Join us -->
+    <section class="stats service-section container" id="stats">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-12 text-center">
+                <p class="service-main-heading main-heading3">Stats Matters</p>
             </div>
-         </div>
-         <div class="col-lg-3 col-6 text-center">
-            <div class="join-container" id="counter-box">
-               <span class="count-digit counter" data-number="600"></span>
-               <span class="count-title">Active Publishers</span>
+        </div>
+        <div class="row join-row">
+            <div class="col-lg-3 col-6 text-center">
+                <div class="join-container" id="counter-box">
+                    <span class="count-digit counter" data-number="40"></span>
+                    <span class="count-title">Active Geo locations</span>
+                </div>
             </div>
-         </div>
-         <div class="col-lg-3 col-6 text-center">
-            <div class="join-container" id="counter-box">
-               <span class="count-digit counter-3" data-number="850"></span>
-               <span class="count-title">Leads Generated </span>
+            <div class="col-lg-3 col-6 text-center">
+                <div class="join-container" id="counter-box">
+                    <span class="count-digit counter" data-number="600"></span>
+                    <span class="count-title">Active Publishers</span>
+                </div>
             </div>
-         </div>
-         <div class="col-lg-3 col-6 text-center">
-            <div class="join-container" id="counter-box">
-               <span class="count-digit counter-4" data-number="5"></span>
-               <span class="count-title">Apps installation</span>
+            <div class="col-lg-3 col-6 text-center">
+                <div class="join-container" id="counter-box">
+                    <span class="count-digit counter-3" data-number="850"></span>
+                    <span class="count-title">Leads Generated </span>
+                </div>
             </div>
-         </div>
-      </div>
+            <div class="col-lg-3 col-6 text-center">
+                <div class="join-container" id="counter-box">
+                    <span class="count-digit counter-4" data-number="5"></span>
+                    <span class="count-title">Apps installation</span>
+                </div>
+            </div>
+        </div>
 
-      <div class="container mt-3 client-slider col-md-8 col-12 text-center">
-         <h2 class="service-main-heading main-heading4">Trusted by The Best</h2>
-         <div class="slider">
-            <div class="slide-track">
-               <div class="slide">
-                  <img src="./assets/img/clients/tickertape.png" height="100" width="250" alt="" />
-               </div>
-               <div class="slide">
-                  <a href="https://www.affpaying.com/">
-                     <img src="./assets/img/clients/affpaying-logo.png" height="100" width="250" alt="" /></a>
-               </div>
-               <div class="slide">
-                  <a href="https://www.affplus.com/">
-                     <img src="./assets/img/clients/affplus.png" height="100" width="250" alt="" /></a>
-               </div>
-               <div class="slide">
-                  <img src="./assets/img/clients/rushgaming.png" height="100" width="250" alt="" />
-               </div>
-               <div class="slide">
-                  <img src="./assets/img/clients/NiyoX.png" height="100" width="250" alt="" />
-               </div>
-               <div class="slide">
-                  <img src="./assets/img/clients/tataneu.png" height="100" width="250" alt="" />
-               </div>
-               <div class="slide">
-                  <img src="./assets/img/clients/HealthifyMe.png" height="100" width="250" alt="" />
-               </div>
-               <div class="slide">
-                  <img src="./assets/img/clients/PolicyBazaar.jpg" height="100" width="250" alt="" />
-               </div>
-               <div class="slide">
-                  <img src="./assets/img/clients/rummytime.jpg" height="100" width="250" alt="" />
-               </div>
-               <div class="slide">
-                  <img src="./assets/img/clients/pocket-rocket.png" height="100" width="250" alt="" />
-               </div>
-               <div class="slide">
-                  <img src="./assets/img/clients/Winzo.png" height="100" width="250" alt="" />
-               </div>
-               <div class="slide nutrayogi">
-                  <img src="./assets/img/clients//nutrayogi.png" alt="" />
-               </div>
-               <div class="slide">
-                  <img src="./assets/img/clients/Fi Money.png" height="100" width="100" alt="" />
-               </div>
-               <div class="slide">
-                  <img src="./assets/img/clients/moj.jpeg" height="100" width="250" alt="" />
-               </div>
+        <div class="container mt-3 client-slider col-md-8 col-12 text-center">
+            <h2 class="service-main-heading main-heading4">Trusted by The Best</h2>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="./assets/img/clients/tickertape.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.affpaying.com/">
+                            <img src="./assets/img/clients/affpaying-logo.png" height="100" width="250" alt="" /></a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.affplus.com/">
+                            <img src="./assets/img/clients/affplus.png" height="100" width="250" alt="" /></a>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/clients/rushgaming.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/clients/NiyoX.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/clients/tataneu.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/clients/HealthifyMe.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/clients/PolicyBazaar.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/clients/rummytime.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/clients/pocket-rocket.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/clients/Winzo.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide nutrayogi">
+                        <img src="./assets/img/clients//nutrayogi.png" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/clients/Fi Money.png" height="100" width="100" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/clients/moj.jpeg" height="100" width="250" alt="" />
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-   </section>
+        </div>
+    </section>
 
-   <!-- Mission -->
-   <section class="mission" id="mission">
-      <section class="service-section container">
-         <div class="container">
-            <div class="row justify-content-center py-3">
-               <div class="col-md-8 col-12 text-center">
-                  <p class="service-main-heading main-heading4">Our Mission</p>
-               </div>
+    <!-- Mission -->
+    <section class="mission" id="mission">
+        <section class="service-section container">
+            <div class="container">
+                <div class="row justify-content-center py-3">
+                    <div class="col-md-8 col-12 text-center">
+                        <p class="service-main-heading main-heading4">Our Mission</p>
+                    </div>
+                </div>
+                <p class="para text-center">We value our reputation and place a strong priority on ethical business
+                    practises, a
+                    methodical approach to
+                    business growth, and the high degree of professionalism displayed by all of our workers. We are
+                    writing the
+                    history of our organization by multiplying the best teamwork customs. We are pleased with it. We can
+                    develop
+                    services that satisfy people's demands and foresee their future desires by concentrating on
+                    providing
+                    high-quality service!
+                </p>
             </div>
-            <p class="para text-center">We value our reputation and place a strong priority on ethical business
-               practises, a
-               methodical approach to
-               business growth, and the high degree of professionalism displayed by all of our workers. We are
-               writing the
-               history of our organization by multiplying the best teamwork customs. We are pleased with it. We can
-               develop
-               services that satisfy people's demands and foresee their future desires by concentrating on
-               providing
-               high-quality service!
-            </p>
-         </div>
-         <div class="mt-5 d-flex justify-content-evenly">
-            <div class=""><img class="mis-img" src="./assets/img/mission/6.png" alt=""></div>
-            <div class=""><img class="mis-img" src="./assets/img/mission/7.png" alt=""></div>
-            <div class=""><img class="mis-img" src="./assets/img/mission/8.png" alt=""></div>
-            <div class=""><img class="mis-img" src="./assets/img/mission/9.png" alt=""></div>
-         </div>
-      </section>
-   </section>
+            <div class="mt-5 d-flex justify-content-evenly">
+                <div class=""><img class="mis-img" src="./assets/img/mission/6.png" alt=""></div>
+                <div class=""><img class="mis-img" src="./assets/img/mission/7.png" alt=""></div>
+                <div class=""><img class="mis-img" src="./assets/img/mission/8.png" alt=""></div>
+                <div class=""><img class="mis-img" src="./assets/img/mission/9.png" alt=""></div>
+            </div>
+        </section>
+    </section>
 
-   <!-- Footer -->
-   <footer>
-      <div class="footer">
-         <div class="frow d-flex justify-content-center">
-            <div class="me-1 f-col">📍Delhi, India</div>
-            <div class="me-1 f-col ">✉️Work@clickconvoy.com </div>
-            <div class="f-col">📞7303-125-733</div>
-         </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="frow d-flex justify-content-center">
+                <div class="me-1 f-col">📍Delhi, India</div>
+                <div class="me-1 f-col ">✉️Work@clickconvoy.com </div>
+                <div class="f-col">📞7303-125-733</div>
+            </div>
 
-         <div class="frow copyright text-center">
-            ©
-            <script> document.write((new Date()).getFullYear()) </script>
+            <div class="frow copyright text-center">
+                ©
+                <script> document.write((new Date()).getFullYear()) </script>
 
-            ALL RIGHTS RESERVED BY ClickConvoy
-         </div>
-      </div>
-   </footer>
+                ALL RIGHTS RESERVED BY ClickConvoy
+            </div>
+        </div>
+    </footer>
 
 
 
-   <!-- JQuery -->
-   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-   <!-- bootstrap js -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
-   <!-- GSAP -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
-   <!-- js -->
-   <script src="././assets/javascripts/app.js"></script>
-   <script src="./assets/javascripts/counter.js"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <!-- js -->
+    <script src="././assets/javascripts/app.js"></script>
+    <script src="./assets/javascripts/counter.js"></script>
 </body>
 
 </html>
