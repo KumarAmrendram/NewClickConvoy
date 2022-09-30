@@ -80,7 +80,6 @@ img {
   padding-right: 10px;
 }
 
-
 .underline {
   border-bottom: solid 2px #474544;
   margin: -0.512em auto;
@@ -108,6 +107,11 @@ img {
 .adv-email {
   float: left;
   width: 90%;
+}
+
+.adv-checkbox {
+  float: left;
+  width: 100%;
 }
 
 .skype {

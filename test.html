@@ -1,46 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- Tailwind CSS -->
-   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-   <!-- Fontawesome kit -->
-   <script src="https://kit.fontawesome.com/4595b8e94f.js" crossorigin="anonymous"></script>
-   <!-- Bootstrap 5 -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-   <title>ClickConvoy</title>
-   <link rel="stylesheet" href="./assets/css/style.css">
-   <link rel="stylesheet" href="assets/css/social.css">
-   <link rel="stylesheet" href="test.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>ClickConvoy Publisher Signup</title>
+    <link rel="stylesheet" href="./assets/css/pubForm.css">
 </head>
 
-
 <body>
-   <footer>
-      <div class="footer">
-         <div class="frow">
-            <ul>
-               <li><a href="">📍Delhi, India</a></li>
-               <li><a href="">✉️ Work@clickconvoy.com</a></li>
-               <li><a href="">📞 8700-921-493</a></li>
-            </ul>
-         </div>
+    <div id="container">
+        <div class="row">
+            <div class="col col-sm-6 text-center"><img src="./assets/img/new-logo.png" alt=""></div>
+            <div class="col cl-sm-6 text-center ps-4">
+                <h1 class="heading adv-heading">Advertiser Signup</h1>
+            </div>
+        </div>
+        <!-- <p class="text-center">Advertise, analyze, and optimize! We do it all for you</p> -->
+        <div class="underline">
+        </div>
+        <div class="">
+            <form method="post" id="contact_form" name="AdvertiserForm">
+                <div class="adv-name">
+                    <label for="name"></label>
+                    <input type="text" placeholder="Name" name="name" id="name_input" required>
+                </div>
+                <div class="company">
+                    <label for="name"></label>
+                    <input type="text" placeholder="Company Name" name="CompanyName" id="address_input" required>
+                </div>
+                <div class="subject">
+                    <label for="subject"></label>
+                    <select placeholder="Subject line" name="CompanyType" id="subject_input" required>
+                        <option disabled hidden selected>Account Type</option>
+                        <option>Private Ltd</option>
+                        <option>Limited Liability Company(LLP)</option>
+                        <option>Partnership</option>
+                        <option>Sole Propritorship</option>
+                    </select>
+                </div>
+                <div class="telephone">
+                    <label for="name"></label>
+                    <input type="text" placeholder="Phone" name="phone" id="telephone_input" required>
+                </div>
+                <div class="adv-email">
+                    <label for="email"></label>
+                    <input type="email" placeholder="e-mail" name="email" id="email_input" required>
+                </div>
+                <div class="skype">
+                    <label for="skype"></label>
+                    <input type="text" placeholder="Skype" name="skype" id="skype_input" required>
+                </div>
+                <div class="telegram">
+                    <label for="telegram"></label>
+                    <input type="text" placeholder="Telegram" name="telegram" id="telegram_input">
+                </div>
 
-         <div class="frow copyright text-center">
-            ©
-            <script> document.write((new Date()).getFullYear()) </script>
+                <div class="submit">
+                    <button class="btn btn-primary" type="submit" id="form_button" name="submit">submit</button>
+                </div>
 
-            ALL RIGHTS RESERVED BY ClickConvoy
-         </div>
-      </div>
-   </footer>
+            </form>
+        </div>
 
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwSrVZT5cVAg_gnXZjBXOv4E3dYM0PRlxoZOu7xDKm7p8lOFnZh0aUKnlm3BpoK4gAs/exec'
+        const form = document.forms['AdvertiserForm']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 
 </body>
-
 
 </html>
