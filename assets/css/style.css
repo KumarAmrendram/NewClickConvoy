@@ -25,7 +25,8 @@ a {
   text-decoration: none;
 }
 
-ul,li {
+ul,
+li {
   margin: 0 !important;
 }
 
@@ -140,7 +141,7 @@ ul,li {
   margin-left: 17px !important;
 }
 
-@media (max-width:568px){
+@media (max-width: 568px) {
   .banner .banner-text {
     font-size: 1.3rem !important;
     margin-left: 20px !important;
@@ -233,7 +234,8 @@ ul,li {
   }
 }
 
-.main-heading3,.main-heading4 {
+.main-heading3,
+.main-heading4 {
   margin-bottom: 0.8em !important;
 }
 
@@ -333,55 +335,20 @@ ul,li {
 /* Footer */
 
 @media (min-width: 568px) {
-
   .f-col {
     padding: 0 1em;
   }
 }
 
-/* DYNamic text */
-.con {
-  display: flex;
-  justify-content: center;
-}
-/* DEMO-SPECIFIC STYLES */
-.dynamic-type .text-dynamic {
-  font-family: 'Montserrat';
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid black;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
-  /* Adjust as needed */
-  animation:
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
+/* DYNAMic TEXT */
+.dynamic-text {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  /* margin: 0; */
+  /* padding: 0; */
+  /* width: 100%; */
+  /* text-align: center; */
 }
 
-/* The typing effect */
-@keyframes typing {
-  from {
-      width: 0
-  }
-
-  to {
-      width: 100%
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-  from,
-  to {
-      border-color: transparent
-  }
-
-  50% {
-      border-color: black
-  }
-}
+/* <span class="dynamic-text">Hello! How are you?<br><span class="ityped"></span></span> */
